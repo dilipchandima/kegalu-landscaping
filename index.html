@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
@@ -7,17 +7,280 @@
     <script type="module" src="/main.js" defer></script>
     <title>Vite App</title>
   </head>
-  <body>
-    <section
-      class="bg-slate-900 w-screen h-screen flex items-center justify-center overflow-hidden"
-    >
-      <div
-        class="bg-hero bg-no-repeat bg-cover w-screen h-screen overflow-hidden"
-      >
-        sd
+  <body class="bg-gray-950">
+    <header>
+      <nav class="z-10 w-full absolute">
+        <div class="max-w-7xl mx-auto px-6 md:px-12 xl:px-6">
+          <div
+            class="flex flex-wrap items-center justify-between py-2 gap-6 md:py-4 md:gap-0 relative"
+          >
+            <input
+              aria-hidden="true"
+              type="checkbox"
+              name="toggle_nav"
+              id="toggle_nav"
+              class="hidden peer"
+            />
+            <div
+              class="relative z-20 w-full flex justify-between lg:w-max md:px-0"
+            >
+              <a href="/" aria-label="logo" class="flex space-x-2 items-center">
+                <span class="text-2xl font-bold text-gray-900 dark:text-white"
+                  >Kegalu Landscaping</span
+                >
+              </a>
+
+              <div class="relative flex items-center lg:hidden max-h-10">
+                <label
+                  role="button"
+                  for="toggle_nav"
+                  aria-label="humburger"
+                  id="hamburger"
+                  class="relative p-6 -mr-6"
+                >
+                  <div
+                    aria-hidden="true"
+                    id="line"
+                    class="m-auto h-0.5 w-5 rounded bg-sky-900 dark:bg-gray-300 transition duration-300"
+                  ></div>
+                  <div
+                    aria-hidden="true"
+                    id="line2"
+                    class="m-auto mt-2 h-0.5 w-5 rounded bg-sky-900 dark:bg-gray-300 transition duration-300"
+                  ></div>
+                </label>
+              </div>
+            </div>
+            <div
+              aria-hidden="true"
+              class="fixed z-10 inset-0 h-screen w-screen bg-white/70 backdrop-blur-2xl origin-bottom scale-y-0 transition duration-500 peer-checked:origin-top peer-checked:scale-y-100 lg:hidden dark:bg-gray-900/70"
+            ></div>
+            <div
+              class="flex-col z-20 flex-wrap gap-6 p-8 rounded-3xl border border-gray-100 bg-white shadow-2xl shadow-gray-600/10 justify-end w-full invisible opacity-0 translate-y-1 absolute top-full left-0 transition-all duration-300 scale-95 origin-top lg:relative lg:scale-100 lg:peer-checked:translate-y-0 lg:translate-y-0 lg:flex lg:flex-row lg:items-center lg:gap-0 lg:p-0 lg:bg-transparent lg:w-7/12 lg:visible lg:opacity-100 lg:border-none peer-checked:scale-100 peer-checked:opacity-100 peer-checked:visible lg:shadow-none dark:shadow-none dark:bg-gray-800 dark:border-gray-700"
+            >
+              <div
+                class="text-gray-600 dark:text-gray-300 lg:pr-4 lg:w-auto w-full lg:pt-0"
+              >
+                <ul
+                  class="tracking-wide font-medium lg:text-sm flex-col flex lg:flex-row gap-6 lg:gap-0"
+                >
+                  <li>
+                    <a
+                      href="/"
+                      class="block md:px-4 transition hover:text-primary"
+                    >
+                      <span>HOME</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#contact"
+                      class="block md:px-4 transition hover:text-primary"
+                    >
+                      <span>CONTACT US</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section class="bg-hero w-screen overflow-hidden relative py-20">
+      <div class="container mx-auto flex flex-col items-center justify-center">
+        <h1 class="text-3xl md:text-6xl text-green-200 text-center w-1/2 my-24">
+          Do you dream of keeping your land, home and office beautiful
+        </h1>
+        <img src="/logo.png" class="logo w-24 md:w-40 top-0" />
+        <h3 class="text-xl md:text-2xl text-white text-center w-1/2 my-24">
+          Contact us now if you want to beautify your home, place of business.
+          Even a small amount of space can make us very beautiful.
+        </h3>
       </div>
-      <img src="/logo.png" class="absolute logo" />
     </section>
-    <section class="bg-slate-600 w-screen h-screen"></section>
+    <section
+      class="container mx-auto my-32 flex flex-col items-center justify-center"
+    >
+      <h3 class="text-4xl text-white text-center w-1/2">OUR SERVICES</h3>
+      <span class="text-lg text-gray-500 text-center w-1/2 my-4 mb-16"
+        >Find more about our services</span
+      >
+
+      <div class="flex flex-wrap gap-10 md:mx-48 items-center justify-center">
+        <div class="flex flex-wrap gap-10">
+          <div class="w-screen md:flex-1 md:w-1/3 flex flex-col items-center">
+            <img
+              src="/img/designs.jpeg"
+              alt="Planting"
+              class="rounded-2xl w-80 h-56 md:h-80 object-cover"
+            />
+            <h3 class="text-2xl md:text-4xl text-white text-center mt-4">
+              Landscaping designs
+            </h3>
+          </div>
+          <div class="w-screen md:flex-1 md:w-1/3 flex flex-col items-center">
+            <img
+              src="/img/Interlock.jpeg"
+              alt="Planting"
+              class="rounded-2xl w-80 h-56 md:h-80 object-cover"
+            />
+            <h3 class="text-2xl md:text-4xl text-white text-center mt-4">
+              Interlock Paving
+            </h3>
+          </div>
+          <div class="w-screen md:flex-1 md:w-1/3 flex flex-col items-center">
+            <img
+              src="/img/grass.jpeg"
+              alt="Planting"
+              class="rounded-2xl w-80 h-56 md:h-80 object-cover"
+            />
+            <h3 class="text-2xl md:text-4xl text-white text-center mt-4">
+              Grass Turfing
+            </h3>
+          </div>
+        </div>
+        <div class="flex flex-wrap gap-10">
+          <div class="w-screen md:flex-1 md:w-1/3 flex flex-col items-center">
+            <img
+              src="/img/maintain.jpeg"
+              alt="Planting"
+              class="rounded-2xl w-80 h-56 md:h-80 object-cover"
+            />
+            <h3 class="text-2xl md:text-4xl text-white text-center mt-4">
+              Garden Maintenance
+            </h3>
+          </div>
+          <div class="w-screen md:flex-1 md:w-1/3 flex flex-col items-center">
+            <img
+              src="/img/rootball.jpeg"
+              alt="Planting"
+              class="rounded-2xl w-80 h-56 md:h-80 object-cover"
+            />
+            <h3 class="text-2xl md:text-4xl text-white text-center mt-4">
+              Rootball Plants
+            </h3>
+          </div>
+          <div class="w-screen md:flex-1 md:w-1/3 flex flex-col items-center">
+            <img
+              src="/img/Ornamental.webp"
+              alt="Planting"
+              class="rounded-2xl w-80 h-56 md:h-80 object-cover"
+            />
+            <h3 class="text-2xl md:text-4xl text-white text-center mt-4">
+              Ornamental Plants
+            </h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="bg-weare bg-cover my-32 flex flex-col items-center justify-center bg-gray-800 py-16"
+    >
+      <h3 class="text-4xl text-white text-center w-1/2">MEET US</h3>
+      <span class="text-lg text-gray-500 text-center w-1/2 my-4 mb-16"
+        >We are experts</span
+      >
+      <h4 class="text-4xl md:text-6xl text-white text-center w-1/2">
+        All the members are experts of the subject
+      </h4>
+
+      <p class="text-white w-2/5 text-center my-10 text-lg md:text-xl">
+        If you have a creative mind..you can make a paradise anywhere..there is
+        no more happiness in this world than living with plants..the charm
+        created in this simplicity is a medicine that cures the tired mind.
+      </p>
+
+      <p class="text-white w-2/5 text-center my-10 text-lg md:text-xl">
+        නිර්මාණශීලී මනසක් තියෙනවා නම්..ඕනම තැනක් දිව්‍යලෝකයක් කරන්න
+        පුලුවන්..ගහකොල එක්ක ජීවත් වෙනවා තරම් සතුටක් තවත් මේ ලෝකෙ නැති තරම්..මේ
+        සරල බව තුල මැවෙන චමත්කාරය විඩාබර මනස සුව කරන ඔසුවක්.
+      </p>
+    </section>
+
+    <section
+      id="contact"
+      class="container mx-auto my-32 flex flex-col items-center justify-center"
+    >
+      <h3 class="text-4xl text-white text-center w-1/2">CONTACT US</h3>
+      <span class="text-lg text-gray-500 text-center w-1/2 my-4 mb-16"
+        >we are your gardening partner</span
+      >
+
+      <div
+        class="flex flex-wrap gap-10 mx-5 md:mx-48 items-center justify-center"
+      >
+        <div class="flex flex-wrap gap-10">
+          <div
+            class="flex-1 flex flex-col items-center bg-gray-800 p-8 rounded-3xl"
+          >
+            <img
+              src="/img/sudesh.jpeg"
+              alt="Planting"
+              class="rounded-full w-52 h-52 object-cover grayscale-[.2]"
+            />
+            <h3 class="text-2xl md:text-4xl text-white text-center mt-4">
+              Sudesh<br />Nayana
+            </h3>
+            <a
+              class="text-white text-2xl text-green-400 mt-8"
+              href="tel:0711387270"
+            >
+              0711387270
+            </a>
+          </div>
+          <div
+            class="flex-1 flex flex-col items-center bg-gray-800 p-8 rounded-3xl"
+          >
+            <img
+              src="/img/kavisha.jpeg"
+              alt="Planting"
+              class="rounded-full w-52 h-52 object-cover grayscale-[.2]"
+            />
+            <h3 class="text-2xl md:text-4xl text-white text-center mt-4">
+              Kavisha Jayasooriya
+            </h3>
+            <a
+              class="text-white text-2xl text-green-400 mt-8"
+              href="tel:0716026072"
+            >
+              0716026072
+            </a>
+          </div>
+          <div
+            class="flex-1 flex flex-col items-center bg-gray-800 p-8 rounded-3xl"
+          >
+            <img
+              src="/img/gayan.jpeg"
+              alt="Planting"
+              class="rounded-full w-52 h-52 object-cover grayscale-[.2]"
+            />
+            <h3 class="text-2xl md:text-4xl text-white text-center mt-4">
+              Gayan Chathuranga
+            </h3>
+            <a
+              class="text-white text-2xl text-green-400 mt-8"
+              href="tel:0716851596"
+            >
+              0716851596
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer
+      class="bg-gray-900 flex flex-col items-center justify-center pt-32 pb-5"
+    >
+      <img src="/logo.png" class="w-20 top-0" />
+      <a
+        href="https://www.dilipchandima.com/"
+        target="_blank"
+        class="text-gray-500 mt-44"
+        >made by - dilipchandima.com</a
+      >
+    </footer>
   </body>
 </html>

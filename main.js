@@ -5,6 +5,19 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
+gsap.from("nav", {
+  translateY: -100,
+  opacity: 0,
+  duration: 1,
+  // scrollTrigger: {
+  //   trigger: document.querySelector(".logo"),
+  //   start: "bottom top",
+  //   end: "120% bottom",
+  //   scrub: true,
+  //   markers: true,
+  // },
+});
+
 gsap.fromTo(
   document.querySelector(".logo"),
   {
@@ -21,21 +34,21 @@ gsap.fromTo(
   }
 );
 
-gsap.fromTo(
-  document.querySelector(".bg-hero"),
-  {
-    scale: 1,
-  },
-  {
-    scale: 1.3,
-    scrollTrigger: {
-      trigger: document.querySelector(".section"),
-      start: "top top",
-      end: "bottom bottom",
-      scrub: 2,
-    },
-  }
-);
+// gsap.fromTo(
+//   document.querySelector(".bg-hero"),
+//   {
+//     scale: 1,
+//   },
+//   {
+//     scale: 1.3,
+//     scrollTrigger: {
+//       trigger: document.querySelector(".section"),
+//       start: "top top",
+//       end: "bottom bottom",
+//       scrub: 2,
+//     },
+//   }
+// );
 
 document.addEventListener("mousemove", mouseMoveFunc);
 

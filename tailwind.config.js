@@ -8,6 +8,7 @@ export default {
     extend: {
       backgroundImage: {
         hero: "url('/hero.jpg')",
+        weare: "url('/img/back2.png')",
       },
       fontFamily: {
         sans: ["Figtree", ...defaultTheme.fontFamily.sans],
